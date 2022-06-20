@@ -163,3 +163,13 @@ main{
     border-color: transparent;
   }
 }
+
+@media screen and (min-width: 600px) and (orientation:landscape) {
+  .container{
+    margin-top: 10%;
+    width: 100%;
+  }
+  .user{
+    margin-top: 10%;
+  }
+}
