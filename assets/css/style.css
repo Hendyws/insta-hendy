@@ -21,7 +21,7 @@ main{
 
 .user,
 .img-left{
-  flex: 1;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -132,4 +132,34 @@ main{
 .app img{
   width: 80%;
   cursor: pointer;
+}
+
+/* TABLET 768px */
+
+@media (max-width: 768px) {
+  .container{
+    justify-content: center;
+    align-items: center;
+  }
+  .img-left{
+    display: none;
+  }
+  .user{
+    width: 90%;
+    margin-top: 20%;
+  }
+}
+
+@media (max-width: 425px) {
+  .container{
+    width: 100%;
+  }
+  .user{
+    margin-top: 0;
+  }
+  .login-continue,
+  .change-cad-acc{
+    background-color: #fafafa;
+    border-color: transparent;
+  }
 }
