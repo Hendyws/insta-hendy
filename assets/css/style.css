@@ -1,0 +1,135 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+main{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+}
+
+.container{
+  height: 600px;
+  width: 50%;
+  display: flex;
+}
+
+.user,
+.img-left{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-left{
+  position: relative;
+}
+.img-left img{
+  position: absolute;
+  width: 185%;
+}
+.img-left img:nth-child(1) {
+  z-index: 2;
+  top: -5%;
+}
+.img-left img:nth-child(2) {
+  z-index: 1;
+  top: -8%;
+  right: -13%;
+}
+
+.login-continue,
+.change-cad-acc{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  padding: 30px 0;
+  font-size: .8rem;
+  font-weight: 500;
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+}
+.perfil{
+  margin: 20px 0;
+  clip-path: circle(45.4% at 50% 50%);
+  width: 100px;
+}
+.perfil img{
+  width: 100%;
+}
+.continue-acc{
+  background-color: #0095f6;
+  height: 30px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.remove-acc{
+  color: #0095f6;
+  margin: 20px 0;
+  cursor: pointer;
+}
+.change-cad-acc{
+  height: 90px;
+  color: #8b8b8b;
+}
+.change-cad-acc strong{
+  color: #0095f6;
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+}
+.change-cad-acc span:nth-child(1){
+  margin-bottom: 10px;
+}
+.apps{
+  height: 100px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.take-app{
+  font-size: .8rem;
+  font-weight: 500;
+  color: #8b8b8b;
+}
+.btns-app {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app{
+  flex: 1;
+  padding: 5px;
+  display: flex;
+}
+.app:nth-child(1){
+  justify-content: flex-end;
+  position: relative;
+  z-index: 3;
+}
+.app:nth-child(2){
+  justify-content: flex-start;
+}
+.app img{
+  width: 80%;
+  cursor: pointer;
+}
